@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Karla, sans-serif;
+    background-image: url("./background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.1;
+}
+
+/* General Styles */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.intro-title {
+    font-weight: bold;
+    color: #293264;
+    font-size: 3rem; /* Increased for desktop */
+    margin-bottom: 0;
+}
+
+.intro-subtitle {
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem; /* Increased for desktop */
+    margin-top: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.intro-btn {
+    background-color: #4D5B9E;
+    font-family: inherit;
+    color: whitesmoke;
+    padding: 0.75em 2.5em; /* Slightly larger padding for desktop */
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.item-container {
+    width: 80%;
+    max-width: 800px;
+    border-bottom: 1px solid #DBDEF0;
+    margin: 0 auto;
+    padding: 16px; /* Increased padding for desktop */
+}
+
+.item-container > p {
+    font-weight: 600;
+    font-size: 1.5rem; /* Increased font size for desktop */
+    color: #293264;
+}
+
+.option-btn {
+    color: #293264;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    padding: 10px 16px; /* Increased padding for desktop */
+    border: 1px solid #4D5B9E;
+    border-radius: 8px;
+    margin: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.option-btn:focus {
+    outline: none;
+}
+
+.chk_btn-container {
+    text-align: center;
+    padding: 40px; /* Increased padding for desktop */
+}
+
+.chk-btn {
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    background-color: #4D5B9E;
+    color: whitesmoke;
+    padding: 14px 22px; /* Increased padding for desktop */
+    font-size: 1.25rem; /* Larger font for desktop */
+    border-radius: 8px;
+    border: none;
+    margin-top: 0;
+}
+
+.correct {
+    background-color: #94D7A2;
+    border: #94D7A2;
+    font-weight: 500;
+}
+
+.incorrect {
+    background-color: #F8BCBC;
+    opacity: 0.7;
+}
+
+.option-btn.selected {
+    background-color: #D6DBF5;
+    border: transparent;
+}
+
+.score-container {
+    text-align: center;
+    font-size: 1.25rem; /* Larger font for desktop */
+    line-height: 1.4;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+    margin-bottom: 0;
+}
+
+.padding-remover {
+    padding-top: 0;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 1024px) {
+    .intro-title {
+        font-size: 2.5rem;
+    }
+
+    .intro-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .intro-btn {
+        padding: 0.75em 2em;
+        font-size: 1.125rem;
+    }
+
+    .item-container > p {
+        font-size: 1.375rem;
+    }
+
+    .option-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .chk-btn {
+        padding: 12px 20px;
+        font-size: 1.125rem;
+    }
+
+    .score-container {
+        font-size: 1.125rem;
+    }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 2rem;
+    }
+
+    .intro-subtitle {
+        font-size: 1rem;
+    }
+
+    .intro-btn {
+        padding: 0.6em 1.5em;
+    }
+
+    .item-container > p {
+        font-size: 1.125rem;
+    }
+
+    .option-btn {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .chk-btn {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+
+    .score-container {
+        font-size: 1rem;
+    }
+}
+
+/* Extra small devices (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 90%;
+    }
+
+    .intro-title {
+        font-size: 1.5rem;
+    }
+
+    .intro-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .item-container {
+        width: 95%;
+    }
+
+    .option-btn {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+
+    .chk-btn {
+        padding: 8px 14px;
+    }
+}
